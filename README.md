@@ -1,2 +1,0 @@
-# comphy
-Computational physics repository
