@@ -16,8 +16,8 @@ for i in range(n):
     y[i,0] = rational(xData,yData,x[i])
     y[i,1] = neville(xData,yData,x[i])
 
-plt.plot(xData,yData,’o’,x,y[:,0],’-’,x,y[:,1],’--’)
-plt.xlabel(’x’)
-plt.legend((’Data’,’Rational’,’Neville’),loc = 0)
+plt.plot(xData,yData,'o',x,y[:,0],'-',x,y[:,1],'--')
+plt.xlabel('x')
+plt.legend(('Data','Rational','Neville'),loc = 0)
 plt.show()
 input("\nPress return to exit")

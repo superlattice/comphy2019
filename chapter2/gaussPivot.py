@@ -16,7 +16,7 @@ def gaussPivot(a,b,tol=1.0e-12):
     for k in range(0,n-1):
   # Row interchange, if needed
         p = np.argmax(np.abs(a[k:n,k])/s[k:n]) + k
-        if abs(a[p,k]) < tol: error.err(’Matrix is singular’)
+        if abs(a[p,k]) < tol: error.err('Matrix is singular')
         if p != k:
             swap.swapRows(b,k,p)
             swap.swapRows(s,k,p)
@@ -28,7 +28,7 @@ def gaussPivot(a,b,tol=1.0e-12):
                 a[i,k+1:n] = a[i,k+1:n] - lam*a[k,k+1:n]
                 b[i] = b[i] - lam*b[k]
     
-    if abs(a[n-1,n-1]) < tol: error.err(’Matrix is singular’)
+    if abs(a[n-1,n-1]) < tol: error.err('Matrix is singular')
   # Back substitution
     b[n-1] = b[n-1]/a[n-1,n-1]
     for k in range(n-2,-1,-1):

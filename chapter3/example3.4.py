@@ -12,5 +12,5 @@ print("-----------------------")
 for x in np.arange(0.0,8.1,0.5):
     y = evalPoly(a,xData,x)
     yExact = 4.8*math.cos(math.pi*x/20.0)
-    print(’{:3.1f} {:9.5f} {:9.5f}’.format(x,y,yExact))
+    print('{:3.1f} {:9.5f} {:9.5f}'.format(x,y,yExact))
 input("\nPress return to exit")

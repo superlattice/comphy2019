@@ -17,7 +17,7 @@ bOrig = b.copy()    # and the constant vector
 x = gaussElimin(a,b)
 det = np.prod(np.diagonal(a))
 
-print(’x =\n’,x)
-print(’\ndet =’,det)
-print(’\nCheck result: [a]{x} - b =\n’,np.dot(aOrig,x) - bOrig)
-input("\nPress return to exit")
+print('x =\n',x)
+print('\ndet =',det)
+print('\nCheck result: [a]{x} - b =\n',np.dot(aOrig,x) - bOrig)
+input('\nPress return to exit')
